@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-powered Import/Export Business Assistant — ask about international trade, Indian export data, and starting your business.">
+    <title>Import/Export Business Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="chat-header" id="chat-header">
+            <div class="header-icon">🌐</div>
+            <div class="header-text">
+                <h1>Import/Export Assistant</h1>
+                <p>Powered by Indian trade data &amp; expert knowledge</p>
+            </div>
+            <div class="header-status">
+                <span class="status-dot"></span>
+                Online
+            </div>
+        </header>
+
+        <!-- Chat Messages -->
+        <div class="chat-box" id="chat-box">
+            <!-- Welcome state -->
+            <div class="welcome-message" id="welcome-message">
+                <div class="welcome-icon">🚢</div>
+                <h2>Welcome to your Trade Assistant</h2>
+                <p>Ask me anything about import/export business, Indian trade data, HS codes, commodities, or how to start your own trading company.</p>
+                <p class="welcome-upload-hint">📎 Upload your business data for <strong>personalized suggestions</strong></p>
+                <div class="suggestion-chips" id="suggestion-chips">
+                    <button class="chip" data-query="How do I start an export business from India?">🚀 Start an export business</button>
+                    <button class="chip" data-query="What does India export to the USA?">🇺🇸 India exports to USA</button>
+                    <button class="chip" data-query="What are the top commodities India exports?">📦 Top export commodities</button>
+                    <button class="chip" data-query="Explain HS codes and their importance in trade">🏷️ What are HS codes?</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div class="typing-indicator" id="typing-indicator">
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+            <div class="typing-dot"></div>
+        </div>
+
+        <!-- File Upload Badge (shown when a file is uploaded) -->
+        <div class="upload-badge" id="upload-badge" style="display: none;">
+            <div class="upload-badge-content">
+                <span class="upload-badge-icon">📊</span>
+                <span class="upload-badge-filename" id="upload-badge-filename"></span>
+                <span class="upload-badge-status">✓ Loaded</span>
+                <button class="upload-badge-remove" id="upload-badge-remove" title="Remove uploaded file">✕</button>
+            </div>
+            <div class="upload-badge-hint">Your questions will now get personalized answers based on this data</div>
+        </div>
+
+        <!-- Upload Progress (shown during upload) -->
+        <div class="upload-progress" id="upload-progress" style="display: none;">
+            <div class="upload-progress-bar">
+                <div class="upload-progress-fill" id="upload-progress-fill"></div>
+            </div>
+            <span class="upload-progress-text">Processing file...</span>
+        </div>
+
+        <!-- Input Area -->
+        <div class="input-area">
+            <div class="input-wrapper">
+                <!-- Upload Button -->
+                <button class="upload-btn" id="upload-btn" title="Upload business data (CSV, Excel, PDF)">
+                    📎
+                </button>
+                <input type="file" id="file-input" accept=".csv,.xlsx,.xls,.pdf,.txt" style="display: none;">
+                <input
+                    type="text"
+                    id="user-input"
+                    placeholder="Ask about import/export, trade data, HS codes..."
+                    autocomplete="off"
+                    autofocus
+                >
+                <button class="send-btn" id="send-btn" title="Send message">
+                    ➤
+                </button>
+            </div>
+            <div class="input-footer">
+                <span class="file-types-hint">Supports: CSV, Excel, PDF, TXT</span>
+                <span class="privacy-hint">🔒 Files processed locally, not stored</span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ── DOM Elements ─────────────────────────────────────────────
+        const chatBox = document.getElementById('chat-box');
+        const userInput = document.getElementById('user-input');
+        const sendBtn = document.getElementById('send-btn');
+        const typingIndicator = document.getElementById('typing-indicator');
+        const welcomeMessage = document.getElementById('welcome-message');
+        const suggestionChips = document.querySelectorAll('.chip');
+        const uploadBtn = document.getElementById('upload-btn');
+        const fileInput = document.getElementById('file-input');
+        const uploadBadge = document.getElementById('upload-badge');
+        const uploadBadgeFilename = document.getElementById('upload-badge-filename');
+        const uploadBadgeRemove = document.getElementById('upload-badge-remove');
+        const uploadProgress = document.getElementById('upload-progress');
+
+        let isWaiting = false;
+        let hasUploadedFile = false;
+
+        // ── Suggestion Chips ─────────────────────────────────────────
+        suggestionChips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                const query = chip.getAttribute('data-query');
+                userInput.value = query;
+                sendMessage();
+            });
+        });
+
+        // ── File Upload ──────────────────────────────────────────────
+        uploadBtn.addEventListener('click', () => {
+            fileInput.click();
+        });
+
+        fileInput.addEventListener('change', () => {
+            const file = fileInput.files[0];
+            if (!file) return;
+
+            // Show progress
+            uploadProgress.style.display = 'flex';
+            uploadBadge.style.display = 'none';
+
+            const formData = new FormData();
+            formData.append('file', file);
+
+            fetch('/upload', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(res => res.json())
+            .then(data => {
+                uploadProgress.style.display = 'none';
+
+                if (data.status === 'ok') {
+                    hasUploadedFile = true;
+                    uploadBadgeFilename.textContent = data.filename;
+                    uploadBadge.style.display = 'flex';
+                    userInput.placeholder = 'Ask about your business — get personalized suggestions...';
+
+                    // Add a system message in chat
+                    appendMessage('bot', `📂 File "${data.filename}" loaded successfully! I can now give you personalized suggestions based on your business data.\n\nTry asking: "Which new markets should I target?" or "How can I grow my exports?"`, ['📊 Uploaded Business Data']);
+                } else {
+                    appendMessage('bot', `❌ Upload failed: ${data.message}`, []);
+                }
+            })
+            .catch(err => {
+                uploadProgress.style.display = 'none';
+                console.error('Upload error:', err);
+                appendMessage('bot', '❌ Upload failed. Please try again.', []);
+            });
+
+            // Reset file input so the same file can be re-uploaded
+            fileInput.value = '';
+        });
+
+        // ── Remove Uploaded File ─────────────────────────────────────
+        uploadBadgeRemove.addEventListener('click', () => {
+            fetch('/clear-upload', { method: 'POST' })
+            .then(res => res.json())
+            .then(() => {
+                hasUploadedFile = false;
+                uploadBadge.style.display = 'none';
+                userInput.placeholder = 'Ask about import/export, trade data, HS codes...';
+                appendMessage('bot', '🗑️ Business data removed. Switching back to standard mode.', []);
+            });
+        });
+
+        // ── Send Message ─────────────────────────────────────────────
+        function sendMessage() {
+            const msg = userInput.value.trim();
+            if (!msg || isWaiting) return;
+
+            // Hide welcome on first message
+            if (welcomeMessage) {
+                welcomeMessage.style.display = 'none';
+            }
+
+            // Add user message bubble
+            appendMessage('user', msg);
+            userInput.value = '';
+            isWaiting = true;
+            sendBtn.disabled = true;
+
+            // Show typing indicator
+            typingIndicator.classList.add('active');
+            scrollToBottom();
+
+            // Send to backend
+            const formData = new FormData();
+            formData.append('msg', msg);
+
+            fetch('/get', {
+                method: 'POST',
+                body: formData,
+            })
+            .then(res => {
+                if (!res.ok) {
+                    // Try to parse the JSON error body from Flask
+                    return res.json().then(errData => {
+                        throw new Error(errData.answer || 'Server error');
+                    }).catch(() => {
+                        throw new Error('Server returned an error (' + res.status + ')');
+                    });
+                }
+                return res.json();
+            })
+            .then(data => {
+                typingIndicator.classList.remove('active');
+                appendMessage('bot', data.answer, data.sources || []);
+                isWaiting = false;
+                sendBtn.disabled = false;
+                scrollToBottom();
+            })
+            .catch(err => {
+                console.error('Error:', err);
+                typingIndicator.classList.remove('active');
+                appendMessage('bot', err.message || 'Sorry, something went wrong. Please try again.', []);
+                isWaiting = false;
+                sendBtn.disabled = false;
+            });
+        }
+
+        // ── Append Message to Chat ───────────────────────────────────
+        function appendMessage(role, text, sources = []) {
+            const row = document.createElement('div');
+            row.className = `message-row ${role}`;
+
+            const avatar = document.createElement('div');
+            avatar.className = 'message-avatar';
+            avatar.textContent = role === 'user' ? '🧑' : '🤖';
+
+            const content = document.createElement('div');
+            content.className = 'message-content';
+
+            const bubble = document.createElement('div');
+            bubble.className = 'message-bubble';
+            bubble.textContent = text;
+
+            content.appendChild(bubble);
+
+            // Add source tags for bot messages
+            if (role === 'bot' && sources.length > 0) {
+                const sourcesDiv = document.createElement('div');
+                sourcesDiv.className = 'message-sources';
+
+                sources.forEach(src => {
+                    const tag = document.createElement('span');
+                    tag.className = 'source-tag';
+                    const lower = src.toLowerCase();
+                    if (lower.includes('export') || lower.includes('uploaded')) {
+                        tag.classList.add('export');
+                    } else if (lower.includes('law') || lower.includes('regulation')) {
+                        tag.classList.add('laws');
+                    } else if (lower.includes('book')) {
+                        tag.classList.add('book');
+                    }
+                    tag.textContent = src;
+                    tag.title = src;  // full text on hover for truncated tags
+                    sourcesDiv.appendChild(tag);
+                });
+
+                content.appendChild(sourcesDiv);
+            }
+
+            row.appendChild(avatar);
+            row.appendChild(content);
+            chatBox.appendChild(row);
+            scrollToBottom();
+        }
+
+        // ── Scroll to Bottom ─────────────────────────────────────────
+        function scrollToBottom() {
+            requestAnimationFrame(() => {
+                chatBox.scrollTop = chatBox.scrollHeight;
+            });
+        }
+
+        // ── Event Listeners ──────────────────────────────────────────
+        sendBtn.addEventListener('click', sendMessage);
+
+        userInput.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+            }
+        });
+
+        // Focus input on load
+        userInput.focus();
+    </script>
+</body>
+</html>
