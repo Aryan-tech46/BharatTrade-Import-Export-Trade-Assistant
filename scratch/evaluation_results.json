@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "category": "Export Data (CSV)",
+    "query": "What does India export to the USA?",
+    "answer": "India exports a variety of products to the USA. Here are some key exports along with their HS codes, values, and growth rates:\n\n1. **BEVERAGES, SPIRITS AND VINEGAR (HS Code: 22)**\n   - Export value in 2023-2024: USD 17.39 million\n   - Export value in 2024-2025: USD 16.42 million\n   - Growth: -5.58%\n\n2. **PREPARATIONS OF VEGETABLES, FRUIT, NUTS OR OTHER PARTS OF PLANTS (HS Code: 20)**\n   - Export value in 2023-2024: USD 170.8 million\n   - Export value in 2024-2025: USD 196.46 million\n   - Growth: 15.02%\n\n3. **ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS (HS Code: 33)**\n   - Export value in 2023-2024: USD 424.08 million\n   - Export value in 2024-2025: USD 505.73 million\n   - Growth: 19.25%\n\nThese data points highlight the diverse range of products that India exports to the USA, including beverages, food preparations, and cosmetic products. The growth rates indicate varying performance across different categories, with essential oils and perfumery products showing the highest growth. \n\nSource: Indian Export Data",
+    "sources": [
+      "Export Data: India \u2192 USA (BEVERAGES, SPIRITS AND VINEGAR.)",
+      "Export Data: India \u2192 USA (PREPARATIONS OF VEGETABLES, FRUIT, NUTS OR OTHER PARTS OF PLANTS.)",
+      "Export Data: India \u2192 USA (ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS.)"
+    ],
+    "response_time_sec": 30.81,
+    "status": "success",
+    "expected_source": "Export Data",
+    "expected_info": "Commodity names, HS codes, USD values"
+  },
+  {
+    "id": 2,
+    "category": "Legal / Regulatory (Laws KB)",
+    "query": "What documents are needed for exporting goods from India?",
+    "answer": "To export goods from India, several key documents are typically required. These documents ensure compliance with both Indian regulations and the requirements of the importing country. Here is a list of the most common documents needed:\n\n1. **Commercial Invoice**: This document provides a detailed description of the goods being exported, including the quantity, value, and terms of sale. It serves as a bill for the buyer and is essential for customs clearance.\n\n2. **Packing List**: The packing list details the contents of each package, including weight, dimensions, and any special handling instructions. It helps in verifying the shipment and ensures that the correct items are delivered.\n\n3. **Bill of Lading (B/L) or Air Waybill (AWB)**: This document serves as a receipt for the goods and a contract between the exporter and the carrier. It outlines the terms of transportation and is necessary for claiming the goods at the destination.\n\n4. **Shipping Bill**: Issued by the exporter, this document is submitted to the customs authorities for clearance. It includes details such as the consignee, shipper, and the nature of the goods.\n\n5. **Certificate of Origin**: This document certifies the country of origin of the goods. It is often required by the importing country to determine the applicable duties and tariffs.\n\n6. **Export License**: Depending on the type of goods and the destination, an export license may be required. This license is issued by the Directorate General of Foreign Trade (DGFT) and is mandatory for certain restricted or controlled items.\n\n7. **Inspection Certificate**: Some countries require an inspection certificate to verify that the goods meet their quality standards. This certificate is usually issued by an independent inspection agency.\n\n8. **Insurance Certificate**: While not always mandatory, an insurance certificate can provide coverage for the goods during transit. It is particularly important for high-value shipments.\n\n9. **Customs Declaration Form**: This form is filled out by the exporter and submitted to the customs authorities. It provides detailed information about the shipment and is used for customs clearance.\n\n10. **Proforma Invoice**: Although not always required, a proforma invoice is often sent to the buyer before the actual shipment. It provides a preliminary estimate of the cost and terms of the transaction.\n\n11. **Export Promotion Council (EPC) Certificate**: For certain products, an EPC certificate may be required to avail of export incentives and benefits.\n\n12. **Health and Sanitary Certificates**: For food, pharmaceuticals, and other regulated products, health and sanitary certificates may be required to ensure compliance with the importing country's standards.\n\n13. **Phytosanitary Certificate**: For agricultural products, a phytosanitary certificate is required to certify that the goods are free from pests and diseases.\n\nThese documents are crucial for ensuring smooth and legal export processes. It is advisable to consult with a freight forwarder or a customs broker to ensure that all necessary documentation is prepared correctly and submitted on time.\n\nFor more detailed information, you can refer to the official guidelines provided by the Directorate General of Foreign Trade (DGFT) and the Indian Customs Department.",
+    "sources": [
+      "Export Data: India \u2192 Chaina p rp (PRINTED BOOKDS, NEWSPAPERS, PICTURES AND OTHER PRODUCTS OF THE PRINTING INDUSTRY; MANUSCRIPTS, TYPESCRIPTS AND PLANS.)",
+      "Export Data: India \u2192 USA (ESSENTIAL OILS AND RESINOIDS; PERFUMERY, COSMETIC OR TOILET PREPARATIONS.)",
+      "Export Data: India \u2192 Russia (PRINTED BOOKDS, NEWSPAPERS, PICTURES AND OTHER PRODUCTS OF THE PRINTING INDUSTRY; MANUSCRIPTS, TYPESCRIPTS AND PLANS.)"
+    ],
+    "response_time_sec": 26.7,
+    "status": "success",
+    "expected_source": "Trade Laws & Regulations KB",
+    "expected_info": "IEC, shipping bill, invoice, packing list"
+  },
+  {
+    "id": 3,
+    "category": "Book Knowledge (PDF)",
+    "query": "How do I start an import export business?",
+    "answer": "Starting an import/export business involves several key steps to ensure success. Here\u2019s a detailed guide based on the provided context and general best practices:\n\n### 1. **Research and Planning**\n   - **Market Research**: Identify the products you want to import or export. Research demand, competition, and potential markets.\n   - **Feasibility Study**: Analyze the feasibility of your business idea. Consider factors like market size, growth potential, and regulatory requirements.\n   - **Business Plan**: Develop a comprehensive business plan. This should include your business model, marketing strategy, financial projections, and operational plan.\n\n### 2. **Legal and Regulatory Compliance**\n   - **Register Your Business**: Register your business with the appropriate government bodies. This may include obtaining a business license, registering for taxes, and getting an Importer-Exporter Code (IEC) in India.\n   - **Understand Trade Regulations**: Familiarize yourself with international trade laws and regulations. This includes understanding tariffs, quotas, and other trade barriers.\n   - **Compliance with Standards**: Ensure that your products meet the quality and safety standards of the countries you plan to import from or export to.\n\n### 3. **Financial Management**\n   - **Capital Requirements**: Determine the initial capital needed to start your business. This includes costs for inventory, shipping, insurance, and marketing.\n   - **Funding Sources**: Explore funding options such as personal savings, loans, grants, and investors.\n   - **Accounting and Bookkeeping**: Set up a system for managing your finances. This includes tracking expenses, revenues, and taxes.\n\n### 4. **Sourcing and Supply Chain Management**\n   - **Find Suppliers**: Identify reliable suppliers. This can be done through trade shows, online platforms, and industry directories.\n   - **Negotiate Terms**: Negotiate favorable terms with suppliers, including pricing, payment terms, and delivery schedules.\n   - **Quality Control**: Implement quality control measures to ensure that the products meet your standards.\n\n### 5. **Logistics and Transportation**\n   - **Shipping Arrangements**: Arrange for the transportation of goods. This may involve working with freight forwarders, customs brokers, and logistics providers.\n   - **Customs Clearance**: Understand the customs clearance process and ensure that all necessary documentation is in order.\n   - **Insurance**: Consider insuring your shipments to protect against loss or damage.\n\n### 6. **Marketing and Sales**\n   - **Build Relationships**: Establish long-term business relationships with clients and suppliers. This can help build trust and ensure repeat business.\n   - **Promote Your Products**: Use various marketing channels to promote your products. This can include online marketing, trade shows, and direct sales.\n   - **Customer Service**: Provide excellent customer service to retain customers and build a good reputation.\n\n### 7. **Risk Management**\n   - **Identify Risks**: Identify potential risks such as currency fluctuations, political instability, and supply chain disruptions.\n   - **Mitigate Risks**: Implement strategies to mitigate these risks. This can include hedging currency risks, diversifying suppliers, and having contingency plans.\n\n### 8. **Continuous Improvement**\n   - **Monitor Performance**: Regularly monitor the performance of your business. This includes tracking sales, customer feedback, and financial metrics.\n   - **Adapt and Innovate**: Be open to adapting your business model and innovating to stay competitive.\n\n### Additional Tips\n   - **Start Small**: Consider starting with one or two products and gradually expanding your range.\n   - **One-Time Deals**: Look for closeout, surplus, and liquidation merchandise to attract foreign buyers with low prices. You can find opportunities by searching online or using trade bulletin boards.\n   - **Stay Informed**: Stay updated on industry trends, market changes, and new regulations.\n\nBy following these steps, you can lay a solid foundation for your import/export business and increase your chances of success. Remember, building a successful business takes time, effort, and persistence. Good luck!\n\n### Source:\n- The provided context from the book \"Building an Import/Export Business\" (Chapter 6, Page 106).",
+    "sources": [
+      "Knowledge Base"
+    ],
+    "response_time_sec": 29.17,
+    "status": "success",
+    "expected_source": "Book",
+    "expected_info": "Steps to start, licensing, market research"
+  },
+  {
+    "id": 4,
+    "category": "Export Data (CSV)",
+    "query": "Show me India's export data to UAE with commodities and values",
+    "answer": "I apologize, but the provided context does not include specific export data for India to the UAE. The data available is for exports to Saudi Arabia and Libya. \n\nIf you need detailed export data for India to the UAE, including commodities and values, I would recommend checking the official sources such as the Directorate General of Foreign Trade (DGFT) or the Indian Trade Statistics published by the Ministry of Commerce and Industry.\n\nWould you like me to guide you on how to access this data?",
+    "sources": [
+      "Export Data: India \u2192 Saudi Arab (CEREALS.)",
+      "Export Data: India \u2192 Saudi Arab (OTHER BASE METALS; CERMETS; ARTICLES THEREOF.)",
+      "Export Data: India \u2192 Libya (ALUMINIUM AND ARTICLES THEREOF.)"
+    ],
+    "response_time_sec": 11.18,
+    "status": "success",
+    "expected_source": "Export Data",
+    "expected_info": "Commodities, HS codes, growth % for UAE"
+  },
+  {
+    "id": 5,
+    "category": "Legal / Regulatory (Laws KB)",
+    "query": "What are the customs regulations for importing into the EU?",
+    "answer": "The provided context does not contain specific details about customs regulations for importing into the European Union (EU). However, I can provide a general overview based on common knowledge and typical practices:\n\n### Customs Regulations for Importing into the EU\n\n1. **Customs Clearance**:\n   - All goods entering the EU must be declared to customs authorities. This is typically done using a Single Administrative Document (SAD), which is the standard form used for customs declarations in the EU.\n\n2. **Tariffs and Duties**:\n   - Import duties and VAT (Value Added Tax) are usually applicable. The rates vary depending on the type of goods and their origin.\n   - Tariff rates can be found in the EU's Common Customs Tariff (CCT).\n\n3. **Rules of Origin**:\n   - Rules of origin determine whether goods qualify for preferential treatment under free trade agreements or other arrangements. Documentation proving the origin of goods may be required.\n\n4. **Customs Valuation**:\n   - The value of the goods for customs purposes is determined according to the World Trade Organization (WTO) Agreement on Implementation of Article VII of the GATT 1994. This usually involves the transaction value method, where the value is based on the price paid or payable for the goods.\n\n5. **Safety and Compliance**:\n   - Goods must comply with EU safety and health standards. This may involve obtaining specific certifications or undergoing inspections.\n   - For certain products, such as food, pharmaceuticals, and chemicals, additional regulatory requirements apply.\n\n6. **Documentation**:\n   - In addition to the SAD, other documents may be required, such as commercial invoices, packing lists, certificates of origin, and health certificates.\n\n7. **Customs Procedures**:\n   - Different customs procedures are available, including release for free circulation, temporary admission, and inward processing.\n   - For goods that are stored before release, customs warehouses can be used.\n\n8. **Enforcement**:\n   - Non-compliance with customs regulations can result in penalties, including fines and the seizure of goods.\n\nFor detailed and up-to-date information, it is advisable to consult the official EU customs website or the relevant national customs authority in the EU member state where the goods will be imported.\n\n### Sources:\n- **EU Customs Website**: Provides comprehensive information on customs procedures and regulations.\n- **Single Administrative Document (SAD)**: Official form for customs declarations in the EU.\n- **Common Customs Tariff (CCT)**: Lists tariff rates for goods entering the EU.\n\nIf you need more specific information or have particular goods in mind, feel free to provide more details, and I can offer more tailored advice.",
+    "sources": [
+      "Knowledge Base",
+      "Trade Laws & Regulations KB"
+    ],
+    "response_time_sec": 37.99,
+    "status": "success",
+    "expected_source": "Trade Laws & Regulations KB",
+    "expected_info": "CE marking, REACH, EU customs rules"
+  },
+  {
+    "id": 6,
+    "category": "Book Knowledge (PDF)",
+    "query": "What is a letter of credit in international trade?",
+    "answer": "A letter of credit (LC), also known as a documentary credit, is a formal payment document used in international trade transactions. It is issued by the importer's bank and communicated to the exporter through banking channels. The primary purpose of a letter of credit is to ensure that the exporter will be paid by the importer once the specified conditions and documentation requirements are met.\n\n### Key Features of a Letter of Credit:\n\n1. **Issuance**: The letter of credit is opened by the importer's bank (the issuing bank) at the request of the importer.\n2. **Communication**: The issuing bank sends the letter of credit to its branch or a correspondent bank in the exporter's country.\n3. **Documentation**: The letter of credit specifies the exact documents the exporter must provide to the bank to receive payment. These documents typically include shipping documents, invoices, and sometimes inspection certificates.\n4. **Payment Obligation**: The issuing bank is obligated to pay the exporter once the required documents are presented and meet the terms and conditions outlined in the letter of credit.\n5. **Cost**: The importer usually pays a fee for this service, which can be a fixed amount or a percentage of the transaction value, often with a minimum fee.\n\n### Types of Letters of Credit:\n- **Commercial Documentary Letter of Credit**: This is the most common type used in international trade. It is payable upon the presentation of specified documents that prove the shipment has been made according to the terms of the contract.\n\n### Process:\n1. **Application**: The importer applies to their bank to open a letter of credit.\n2. **Issuance**: The bank issues the letter of credit and sends it to the exporter's bank.\n3. **Presentation**: The exporter prepares the required documents and presents them to their bank.\n4. **Verification**: The bank verifies that the documents meet the terms of the letter of credit.\n5. **Payment**: If the documents are in order, the bank pays the exporter.\n\n### Benefits:\n- **Security for the Exporter**: Ensures payment as long as the terms are met.\n- **Security for the Importer**: Ensures that the goods will be delivered as agreed before payment is made.\n\nIn summary, a letter of credit is a crucial financial instrument in international trade that provides security and assurance to both the importer and the exporter.",
+    "sources": [
+      "Knowledge Base"
+    ],
+    "response_time_sec": 15.38,
+    "status": "success",
+    "expected_source": "Book",
+    "expected_info": "LC definition, parties involved, process"
+  },
+  {
+    "id": 7,
+    "category": "Cross-Source (Multi)",
+    "query": "I want to export textiles from India. What regulations should I follow and what is the current trade volume?",
+    "answer": "To export textiles from India, you need to comply with several regulations and follow specific procedures. Here\u2019s a breakdown of the key steps and regulations:\n\n### Regulations and Procedures\n\n1. **Registration and Licenses:**\n   - **IEC (Import-Export Code):** Obtain an Import-Export Code from the Directorate General of Foreign Trade (DGFT). This is mandatory for all exporters.\n   - **GST Registration:** Register for Goods and Services Tax (GST) if your turnover exceeds the threshold limit.\n   - **Textile Committee Registration:** Depending on the type of textile products, you may need to register with the Textiles Committee or other relevant bodies.\n\n2. **Product Standards and Certifications:**\n   - Ensure that your products meet the quality standards set by the Bureau of Indian Standards (BIS) and any international standards required by the importing country.\n   - Obtain necessary certifications such as ISO, GOTS (Global Organic Textile Standard), etc., if applicable.\n\n3. **Customs Compliance:**\n   - File the Shipping Bill with the Customs Department.\n   - Provide accurate and complete documentation, including the invoice, packing list, bill of lading, and any other required documents.\n   - Pay any applicable duties and taxes.\n\n4. **Export Incentives:**\n   - Utilize export incentives and schemes provided by the government, such as the Merchandise Exports from India Scheme (MEIS) and the Service Exports from India Scheme (SEIS).\n\n5. **Trade Agreements:**\n   - Be aware of any bilateral or multilateral trade agreements that India has with the importing country, as these can provide preferential tariffs and other benefits.\n\n### Current Trade Volume\n\nHere is the current trade volume for some textile products exported from India:\n\n1. **OTHER VEGETABLE TEXTILE FIBRES; PAPER YARN AND WOVEN FABRICS OF PAPER YARN (HS Code: 53) to USA:**\n   - **2023-2024:** USD 78.42 million\n   - **2024-2025:** USD 94.71 million\n   - **Growth:** 20.76%\n\n2. **OTHER VEGETABLE TEXTILE FIBRES; PAPER YARN AND WOVEN FABRICS OF PAPER YARN (HS Code: 53) to Germany:**\n   - **2023-2024:** USD 9.59 million\n   - **2024-2025:** USD 13.46 million\n   - **Growth:** 40.33%\n\n3. **SPECIAL WOVEN FABRICS; TUFTED TEXTILE FABRICS; LACE; TAPESTRIES; TRIMMINGS; EMBROIDERY (HS Code: 58) to USA:**\n   - **2023-2024:** USD 51.92 million\n   - **2024-2025:** USD 64.99 million\n   - **Growth:** 25.18%\n\n### Sources:\n- **Indian Export Data** for the export values and growth rates of the specified commodities to the USA and Germany.\n\nBy following these regulations and understanding the current trade volumes, you can effectively navigate the process of exporting textiles from India.",
+    "sources": [
+      "Export Data: India \u2192 USA (OTHER VEGETABLE TEXTILE FIBRES; PAPER YARN AND WOVEN FABRICS OF PAPER YARN.)",
+      "Export Data: India \u2192 Germany (OTHER VEGETABLE TEXTILE FIBRES; PAPER YARN AND WOVEN FABRICS OF PAPER YARN.)",
+      "Export Data: India \u2192 USA (SPECIAL WOVEN FABRICS; TUFTED TEXTILE FABRICS; LACE; TAPESTRIES; TRIMMINGS; EMBROIDERY.)"
+    ],
+    "response_time_sec": 26.91,
+    "status": "success",
+    "expected_source": "Multiple sources",
+    "expected_info": "Export data + legal requirements combined"
+  },
+  {
+    "id": 8,
+    "category": "Export Data (CSV)",
+    "query": "Which commodities does India export to China?",
+    "answer": "The provided context does not include specific information about the commodities India exports to China. Therefore, I cannot provide a detailed answer based on the given data. If you have more specific data or another source, I can help you analyze it.\n\nHowever, based on the context provided, here are the commodities and their export values for other countries:\n\n1. **Hong Kong:**\n   - **MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES (HS Code: 27)**\n     - Export value in 2023-2024: USD 23.71 million\n     - Export value in 2024-2025: USD 212.26 million\n     - Growth: 795.24%\n   - **SALT; SULPHUR; EARTHS AND STONE; PLASTERING MATERIALS, LIME AND CEMENT (HS Code: 25)**\n     - Export value in 2023-2024: USD 0.51 million\n     - Export value in 2024-2025: USD 0.55 million\n     - Growth: 7.66%\n\n2. **Taiwan:**\n   - **MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES (HS Code: 27)**\n     - Export value in 2023-2024: USD 256.78 million\n     - Export value in 2024-2025: USD 29.38 million\n     - Growth: -88.56%\n\nFor information on India's exports to China, you may need to refer to the official Indian Trade Statistics or other reliable sources.",
+    "sources": [
+      "Export Data: India \u2192 Hong Kong (MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES.)",
+      "Export Data: India \u2192 Taiwan (MINERAL FUELS, MINERAL OILS AND PRODUCTS OF THEIR DISTILLATION; BITUMINOUS SUBSTANCES; MINERAL WAXES.)",
+      "Export Data: India \u2192 Hong Kong (SALT; SULPHUR; EARTHS AND STONE; PLASTERING MATERIALS, LIME AND CEMENT.)"
+    ],
+    "response_time_sec": 27.85,
+    "status": "success",
+    "expected_source": "Export Data",
+    "expected_info": "Commodity names and HS codes for China"
+  },
+  {
+    "id": 9,
+    "category": "Book Knowledge (PDF)",
+    "query": "Explain the role of freight forwarders in international trade",
+    "answer": "Freight forwarders play a crucial role in international trade by facilitating the movement of goods from the point of origin to the destination. Here are some key aspects of their role:\n\n1. **Booking and Logistics**:\n   - **Booking Requests**: Once you provide the necessary information, the freight forwarder sends a booking request to the chosen carrier (such as an airline or steamship line). This ensures that the space is reserved for your shipment.\n   - **Logistics Planning**: They plan the most efficient route and mode of transportation, considering factors such as cost, transit time, and safety.\n\n2. **Documentation**:\n   - **Preparation of Documents**: Freight forwarders prepare and process all necessary documentation, including bills of lading, invoices, packing lists, and customs declarations. This helps ensure compliance with international regulations and facilitates smooth customs clearance.\n   - **Compliance**: They ensure that all documents meet the requirements of the exporting and importing countries, as well as any intermediate ports.\n\n3. **Customs Clearance**:\n   - **Import and Export Clearance**: Freight forwarders handle the customs clearance process, which involves preparing and submitting the required forms and paying duties and taxes.\n   - **Brokering Services**: Some freight forwarders also act as customs brokers, providing additional services to ensure that goods are cleared efficiently and legally.\n\n4. **Consolidation and Deconsolidation**:\n   - **Freight Consolidation**: They can consolidate shipments from multiple shippers to fill a container, which can reduce costs for smaller shipments. This is particularly useful for Less-Than-Container Load (LCL) shipments.\n   - **Deconsolidation**: At the destination, they deconsolidate the goods and deliver them to the respective recipients.\n\n5. **Tracking and Communication**:\n   - **Shipment Tracking**: Freight forwarders provide real-time tracking information, allowing you to monitor the status of your shipment throughout its journey.\n   - **Communication**: They act as a liaison between you, the carrier, and the importer, ensuring that all parties are informed and any issues are resolved promptly.\n\n6. **Cost Management**:\n   - **Negotiation**: They negotiate rates with carriers to secure the best possible prices for their clients.\n   - **Cost Savings**: By leveraging their volume and relationships with carriers, they can often offer more competitive rates than individual shippers could obtain on their own.\n\n7. **Risk Management**:\n   - **Insurance**: Freight forwarders can arrange insurance for the goods during transit, providing protection against loss or damage.\n   - **Risk Assessment**: They assess potential risks and provide advice on how to mitigate them, ensuring the safe and timely delivery of goods.\n\n8. **Value-Added Services**:\n   - **Warehousing**: Some freight forwarders offer warehousing services, allowing goods to be stored temporarily before or after shipment.\n   - **Logistics Solutions**: They can provide comprehensive logistics solutions, including inventory management, distribution, and reverse logistics.\n\nIn summary, freight forwarders are essential partners in international trade, offering a wide range of services to ensure that goods are transported efficiently, safely, and cost-effectively. Their expertise in logistics, documentation, and compliance helps streamline the entire shipping process, making international trade more accessible and manageable for businesses of all sizes.",
+    "sources": [
+      "Knowledge Base"
+    ],
+    "response_time_sec": 23.14,
+    "status": "success",
+    "expected_source": "Book",
+    "expected_info": "Freight forwarder responsibilities"
+  },
+  {
+    "id": 10,
+    "category": "Out-of-Scope (Hallucination Test)",
+    "query": "What is the capital of France?",
+    "answer": "The capital of France is Paris. However, this information is not derived from the provided context, which focuses on Indian export data to France. \n\nFor general knowledge, Paris is the capital city of France. If you need more detailed information about France or its capital, feel free to ask!",
+    "sources": [
+      "Export Data: India \u2192 France (PHARMACEUTICAL PRODUCTS)",
+      "Export Data: India \u2192 France (ORGANIC CHEMICALS)",
+      "Export Data: India \u2192 France (SILK)"
+    ],
+    "response_time_sec": 4.6,
+    "status": "success",
+    "expected_source": "None",
+    "expected_info": "Should refuse or admit out of context"
+  }
+]
