@@ -1,0 +1,712 @@
+================================================================================
+IMPORT/EXPORT LAWS, REGULATIONS & TRADE CASES — KNOWLEDGE BASE
+================================================================================
+Last Updated: April 2026
+Purpose: RAG knowledge base for Import/Export Chatbot
+
+================================================================================
+PART 1: INDIA — CORE TRADE LAWS & REGULATIONS
+================================================================================
+
+1.1 FOREIGN TRADE (DEVELOPMENT AND REGULATION) ACT, 1992 (FTDR ACT)
+------------------------------------------------------------------------
+- Supreme legislation governing foreign trade in India.
+- Empowers the Central Government to formulate the Foreign Trade Policy (FTP).
+- No export or import can be made except in accordance with this Act.
+- Key Provisions:
+  * Section 3: Power of Central Govt to make orders for prohibition/restriction.
+  * Section 5: DGFT empowered to issue licenses, permits, and certificates.
+  * Section 6: Prohibition on exports without IEC (Importer Exporter Code).
+  * Section 11: Penalties for contravention — up to ₹10,000 or 5x the value.
+
+1.2 CUSTOMS ACT, 1962
+------------------------------------------------------------------------
+- Primary law governing customs duties, import/export procedures, clearance of goods, and enforcement.
+- Key Provisions:
+  * Section 11: Power to prohibit import/export of goods.
+  * Section 12: Levy of customs duty on imported/exported goods.
+  * Section 17: Self-assessment of duty by the importer.
+  * Section 28: Recovery of duties not levied or short-levied.
+  * Section 46: Entry of goods on importation (Bill of Entry).
+  * Section 50: Entry of goods for export (Shipping Bill).
+  * Sections 111-113: Goods liable to confiscation.
+  * Section 114: Penalties for contravention.
+  * Section 135: Criminal liability — imprisonment up to 7 years.
+- Penalties:
+  * Civil: Confiscation of goods + fines up to the value of goods.
+  * Criminal: If goods value > ₹1 crore → non-bailable offense.
+  * If goods value ≤ ₹1 crore → bailable offense.
+
+1.3 FOREIGN EXCHANGE MANAGEMENT ACT (FEMA), 1999
+------------------------------------------------------------------------
+- Regulates foreign exchange transactions related to imports/exports.
+- Managed by the Reserve Bank of India (RBI).
+- Key Requirements:
+  * All trade payments must go through authorized dealers (banks).
+  * Export proceeds must be realized within 9 months (extended to 15 months in some cases).
+  * Import payments must match the invoice and customs documents.
+  * Any violation can lead to penalties up to 3x the amount involved.
+- FEMA Regulations 2026 (effective Oct 1, 2026):
+  * Consolidated and streamlined foreign exchange framework.
+  * Replaces older notifications for improved clarity.
+
+1.4 FOREIGN TRADE POLICY (FTP) 2023
+------------------------------------------------------------------------
+- Current trade policy of India — shifts from incentive-based to facilitation-based.
+- Four Pillars:
+  1. Incentive to Remission (replacing MEIS with RoDTEP/RoSCTL).
+  2. Export Promotion through Collaboration.
+  3. Ease of Doing Business (automation, paperless systems).
+  4. Emerging Areas (e-commerce exports, districts as export hubs).
+- Key Schemes:
+  * Advance Authorization: Duty-free import of inputs for export production.
+  * EPCG (Export Promotion Capital Goods): Duty-free import of capital goods against export obligation.
+  * RoDTEP (Remission of Duties and Taxes on Exported Products).
+  * RoSCTL (Rebate of State and Central Taxes and Levies) for textiles.
+  * Districts as Export Hubs (DEH): Promoting exports at district level.
+  * One-Time Amnesty Scheme: Resolve pending export obligation defaults.
+
+1.5 IMPORTER EXPORTER CODE (IEC)
+------------------------------------------------------------------------
+- Mandatory 10-digit identification number from DGFT.
+- Required for any entity engaged in import or export.
+- Linked to the entity's PAN (Permanent Account Number).
+- Valid for lifetime but must be updated annually on the DGFT portal.
+- Exemptions: Personal use imports, diplomatic bags, certain govt agencies.
+
+1.6 ITC (HS) CLASSIFICATION — INDIA
+------------------------------------------------------------------------
+- Indian Trade Classification based on the Harmonized System.
+- 8-digit code system used to classify all goods.
+- Categories:
+  * FREE: No license required for import/export.
+  * RESTRICTED: Requires license/authorization from DGFT.
+  * PROHIBITED: Not permitted for trade under any circumstance.
+  * STE (State Trading Enterprises): Only through designated entities.
+- Check: Use the DGFT website (dgft.gov.in) to verify item policy.
+
+1.7 SCOMET ITEMS (SPECIAL CHEMICALS, ORGANISMS, MATERIALS, EQUIPMENT & TECHNOLOGIES)
+------------------------------------------------------------------------
+- Dual-use items regulated under the Foreign Trade Policy.
+- 8 Categories:
+  0. Nuclear Materials and Equipment
+  1. Toxic Chemical Agents and related equipment
+  2. Organisms, toxins, and related equipment
+  3. Missile delivery systems and related equipment
+  4. Dual-use equipment (nuclear, chemical, biological)
+  5. Aerospace systems
+  6. Munitions List
+  7. Electronics
+- Export requires specific SCOMET license from DGFT.
+
+================================================================================
+PART 2: COUNTRY-SPECIFIC TRADE LAWS
+================================================================================
+
+2.1 UNITED STATES
+------------------------------------------------------------------------
+A) Export Controls:
+   - ITAR (International Traffic in Arms Regulations):
+     * Governs defense articles on the US Munitions List (USML).
+     * Managed by DDTC (Directorate of Defense Trade Controls).
+     * Companies must register with DDTC.
+     * License required for export of defense articles.
+   - EAR (Export Administration Regulations):
+     * Governs dual-use items on the Commerce Control List (CCL).
+     * Managed by BIS (Bureau of Industry and Security).
+     * Items identified by ECCN (Export Control Classification Number).
+     * License requirement depends on: ECCN + destination + end-user + end-use.
+   - OFAC Sanctions:
+     * Administered by Treasury Department.
+     * Economic sanctions against targeted countries, entities, individuals.
+     * Restricted parties lists: Entity List, SDN List, Unverified List.
+
+B) Import Regulations:
+   - HTSUS (Harmonized Tariff Schedule of the United States):
+     * 10-digit classification code for all imported goods.
+     * Published by the US International Trade Commission (USITC).
+     * Determines duty rates, statistical categories.
+   - Key Agencies: CBP (Customs and Border Protection), FDA, USDA, EPA, CPSC.
+   - Section 301 Tariffs: Special tariffs on goods from specific countries.
+   - Section 232 Tariffs: National security tariffs (steel, aluminum).
+   - Anti-Dumping and Countervailing Duties (AD/CVD).
+
+C) Penalties:
+   - ITAR: Fines up to $1 million per violation, imprisonment up to 20 years.
+   - EAR: Fines up to $300,000 per violation or twice the transaction value.
+   - Criminal: Fines up to $1 million, imprisonment up to 20 years.
+
+2.2 EUROPEAN UNION
+------------------------------------------------------------------------
+A) CE Marking:
+   - Mandatory for many product categories (electronics, machinery, toys, medical devices).
+   - Indicates compliance with EU safety, health, and environmental requirements.
+   - Manufacturer creates technical file + EU Declaration of Conformity.
+   - Recent Updates: Battery Regulation (EU) 2023/1542, AI Act, General Product Safety Regulation.
+
+B) REACH (Registration, Evaluation, Authorisation, Restriction of Chemicals):
+   - Applies to all chemicals manufactured/imported into EU (≥1 tonne/year).
+   - Registration with ECHA (European Chemicals Agency) mandatory.
+   - Restricts Substances of Very High Concern (SVHC).
+   - Authorisation List for restricted chemicals.
+   - Periodic updates to restricted substance lists.
+
+C) RoHS Directive (Restriction of Hazardous Substances):
+   - Limits hazardous materials in electrical and electronic equipment (EEE).
+   - 10 restricted substances: Lead, Mercury, Cadmium, Hexavalent Chromium, PBB, PBDE, DEHP, BBP, DBP, DIBP.
+   - Self-certified via Declaration of Conformity.
+   - Exemptions available for specific applications.
+
+D) Customs Codes:
+   - HS Code: 6-digit global code.
+   - CN Code: 8-digit EU Combined Nomenclature.
+   - TARIC Code: 10-digit EU integrated tariff code.
+   - TARIC includes: duty rates, anti-dumping duties, import controls.
+   - Reference: European Commission TARIC consultation website.
+
+E) CBAM (Carbon Border Adjustment Mechanism):
+   - Transitional phase started Oct 2023.
+   - Reporting requirements for importers of: iron/steel, cement, aluminum, fertilizers, electricity, hydrogen.
+   - Full implementation with mandatory carbon certificates from 2026.
+
+F) GDPR Compliance for Cross-Border Trade:
+   - Data protection requirements for customer data in trade.
+   - Affects e-commerce and digital trade operations.
+
+2.3 CHINA
+------------------------------------------------------------------------
+A) Food Safety & GACC Registration:
+   - All overseas food manufacturers must register with GACC.
+   - Current regulation: Decree 248 (being replaced by Order No. 280, effective June 2026).
+   - High-risk foods (meat, dairy, seafood, infant formula): Official recommendation required from exporting country's authority.
+   - Low-risk foods (snacks, beverages): Self-registration via CIFER system.
+   - Mandatory bilingual labels (Simplified Chinese required).
+
+B) Cosmetics Regulation:
+   - Regulated by NMPA under CSAR framework.
+   - "Special cosmetics" (sunscreens, hair dyes): Registration required.
+   - "General cosmetics": Filing notification required.
+   - Electronic submissions only (since Sep 2024).
+   - Rigorous safety assessments mandatory.
+   - Non-animal testing methods increasingly accepted.
+
+C) Electronics:
+   - CCC Certification (China Compulsory Certification) mandatory for many electronics.
+   - China RoHS: Restrictions on hazardous substances (aligned with GB/T 39560 standards since Mar 2024).
+   - EMC standard GB 4343.1-2024: Full enforcement from June 2026.
+   - Products must comply with GB (Guobiao) national standards.
+
+D) Key Import Steps:
+   - Verify classification and registration requirements.
+   - Ensure Chinese-language labeling.
+   - Maintain supply chain traceability.
+   - Document: safety reports, certificates of origin, compliance certificates.
+
+2.4 UNITED ARAB EMIRATES (UAE)
+------------------------------------------------------------------------
+A) Core Requirements:
+   - Valid trade license from DED (Department of Economic Development) or Free Zone Authority.
+   - Customs Code (Import/Export Code) mandatory for clearing shipments.
+   - Standard 5% customs duty on CIF value.
+   - 5% VAT generally applicable.
+
+B) Documentation:
+   - Commercial invoice, packing list, bill of lading/airway bill.
+   - Certificate of origin.
+   - Import permits for restricted goods.
+
+C) Free Zones:
+   - 0% customs duty for goods imported into free zones.
+   - 100% foreign ownership allowed.
+   - Selling from free zone to UAE mainland requires customs clearance.
+   - Major free zones: JAFZA (Jebel Ali), DAFZA (Dubai Airport Free Zone), SAIF Zone, RAK FTZ.
+
+D) Halal Certification:
+   - MANDATORY for food products (especially meat/poultry), cosmetics, pharmaceuticals.
+   - Governed by MoIAT (Ministry of Industry and Advanced Technology).
+   - Certification through EIAC-accredited Halal Certification Bodies.
+   - Requirements: Halal ingredients, contamination-free manufacturing, supply chain traceability.
+
+E) Emirates Conformity Assessment Scheme (ECAS):
+   - Certificate of Conformity required for regulated products.
+   - Emirates Quality Mark (EQM) for quality and safety compliance.
+
+F) Prohibited Items:
+   - Narcotic substances, counterfeit goods, materials conflicting with Islamic teachings.
+   - Restricted: Medicines, chemicals, weaponry (require ministry approval).
+
+2.5 JAPAN
+------------------------------------------------------------------------
+A) Food Imports:
+   - Governed by Food Sanitation Act.
+   - Notification to MHLW quarantine station required at port of entry.
+   - Laboratory inspections for chemicals, additives, contaminants, pathogenic microbes.
+   - Positive List System: Only approved additives permitted; unapproved = rejected.
+   - Strict Food Labeling Act (updated April 2026): allergens, storage, heating instructions.
+
+B) Pharmaceutical and Medical Device Act (PMD Act):
+   - Regulates pharmaceuticals, quasi-drugs, cosmetics, medical devices, regenerative medicine.
+   - Marketing Authorization Holder (MAH) designation required for commercial import/sale.
+   - Personal importation: Small quantities allowed (2-month supply for non-prescription).
+   - Exceeding limits requires Import Confirmation (Yakkan Shoumei).
+
+C) JIS (Japanese Industrial Standards):
+   - National standards for industrial products (quality, safety, compatibility).
+   - Primarily voluntary but often referenced in regulations.
+   - Critical for government procurement.
+   - JIS mark available via third-party certification.
+
+D) Key Agencies:
+   - MHLW: Food sanitation and pharmaceutical affairs.
+   - METI: Industrial standards and trade.
+   - MAFF: Agriculture, forestry, and fisheries.
+   - Japan Customs: Import procedures and tariff information.
+
+================================================================================
+PART 3: PRODUCT-SPECIFIC REGULATIONS
+================================================================================
+
+3.1 FOOD & AGRICULTURAL PRODUCTS
+------------------------------------------------------------------------
+A) India:
+   - FSSAI (Food Safety and Standards Authority of India) regulations.
+   - FSSAI license mandatory for food importers.
+   - Import allowed only through designated ports.
+   - Products must comply with Indian food safety standards.
+   - Labeling: MRP, ingredients, nutritional info, FSSAI logo, "best before" date required.
+   - Specific restrictions: Genetically modified foods, certain pesticide residue levels.
+
+B) US (FDA):
+   - Prior Notice of imported food required via FDA.
+   - FSMA (Food Safety Modernization Act): Preventive controls, FSVP (Foreign Supplier Verification Programs).
+   - Labeling: Nutrition Facts, allergen declarations.
+   - Banned: Kinder Surprise eggs, certain unpasteurized cheeses.
+
+C) EU:
+   - EU General Food Law Regulation (EC) 178/2002.
+   - RASFF (Rapid Alert System for Food and Feed) for unsafe products.
+   - Strict MRL (Maximum Residue Levels) for pesticides.
+   - Protected designations: PDO, PGI, TSG for regional specialties.
+
+D) China:
+   - GACC registration mandatory (see Section 2.3).
+   - GB national food safety standards.
+   - Import Food Safety Management Measures.
+
+3.2 PHARMACEUTICALS & MEDICAL DEVICES
+------------------------------------------------------------------------
+A) India:
+   - CDSCO (Central Drugs Standard Control Organisation) regulates.
+   - Drug Controller General of India (DCGI) approves imports.
+   - Import license required under the Drugs & Cosmetics Act, 1940.
+   - Registration certificate + test license needed.
+   - Medical devices now classified in 4 classes (A, B, C, D) under Medical Device Rules, 2017.
+
+B) US:
+   - FDA approval required (NDA, ANDA, 510(k) for devices).
+   - Good Manufacturing Practice (GMP/cGMP) compliance.
+   - Drug Listing & Establishment Registration.
+   - Medical devices classified into Class I, II, III.
+
+C) EU:
+   - Medical Device Regulation (EU MDR 2017/745).
+   - In Vitro Diagnostic Regulation (IVDR 2017/746).
+   - CE marking mandatory for medical devices.
+   - Conformity assessed by Notified Bodies.
+
+D) Japan:
+   - PMD Act regulates all pharmaceuticals and medical devices.
+   - MAH (Marketing Authorization Holder) required.
+   - PMDA (Pharmaceuticals and Medical Devices Agency) approval.
+
+3.3 TEXTILES & APPAREL
+------------------------------------------------------------------------
+A) India:
+   - Quality Control Orders (QCOs) for certain textile items.
+   - BIS certification may be required.
+   - RoSCTL scheme for textile exporters (rebate of taxes).
+   - Textile Committee registration for quality marks.
+
+B) US:
+   - Textile Fiber Products Identification Act: Fiber content labeling required.
+   - Flammable Fabrics Act: Safety standards for clothing.
+   - Country of Origin marking mandatory.
+   - Berry Amendment: Certain textiles for military must be US-made.
+
+C) EU:
+   - Textile Regulation (EU) 1007/2011: Labeling requirements.
+   - REACH compliance for chemicals used in textiles.
+   - Azo dyes restriction (carcinogenic dyes banned).
+   - CE marking not typically required for textiles.
+
+3.4 ELECTRONICS & ELECTRICAL EQUIPMENT
+------------------------------------------------------------------------
+A) India:
+   - BIS (Bureau of Indian Standards) certification mandatory for many electronics.
+   - Compulsory Registration Scheme (CRS) under Electronics & IT Goods Order.
+   - TEC (Telecommunication Engineering Centre) approval for telecom equipment.
+   - E-Waste Management Rules, 2016: EPR (Extended Producer Responsibility).
+
+B) US:
+   - FCC (Federal Communications Commission) certification for electronic devices.
+   - UL (Underwriters Laboratories) safety certification.
+   - ENERGY STAR: Voluntary energy efficiency certification.
+   - CPSC standards for consumer electronics.
+
+C) EU:
+   - CE marking mandatory.
+   - EMC Directive (2014/30/EU): Electromagnetic compatibility.
+   - LVD (Low Voltage Directive 2014/35/EU): Electrical safety.
+   - RoHS + REACH compliance.
+   - WEEE Directive: Waste electrical and electronic equipment recycling.
+
+D) China:
+   - CCC (China Compulsory Certification).
+   - China RoHS compliance.
+   - GB standards for safety and EMC.
+
+3.5 CHEMICALS & HAZARDOUS MATERIALS
+------------------------------------------------------------------------
+A) India:
+   - Manufacture, Storage and Import of Hazardous Chemical Rules, 1989.
+   - DGFT restrictions on import of certain chemicals.
+   - BIS standards for chemical products.
+   - Ministry of Environment approval for hazardous chemicals.
+
+B) US:
+   - TSCA (Toxic Substances Control Act).
+   - EPA registration for pesticides (FIFRA).
+   - DOT regulations for transport of hazardous materials.
+   - OSHA workplace chemical safety.
+
+C) EU:
+   - REACH Regulation (primary chemical regulation).
+   - CLP Regulation (Classification, Labelling, Packaging).
+   - Biocidal Products Regulation.
+   - Prior Informed Consent (PIC) Regulation for restricted chemicals.
+
+3.6 GEMS, JEWELRY & PRECIOUS METALS
+------------------------------------------------------------------------
+A) India:
+   - GJEPC (Gem & Jewellery Export Promotion Council) registration.
+   - Hallmarking Act 2000 (mandatory BIS hallmarking for gold jewelry).
+   - Import of gold restricted to nominated agencies and refineries.
+   - SEZ/EOU scheme for duty-free raw material import.
+
+B) Kimberley Process:
+   - International certification scheme for rough diamonds.
+   - India is a participant; KP certificate required for import/export.
+   - Prevents trade in conflict diamonds.
+
+================================================================================
+PART 4: HARMONIZED SYSTEM (HS) CODE CLASSIFICATION
+================================================================================
+
+4.1 OVERVIEW
+------------------------------------------------------------------------
+- Developed by the World Customs Organization (WCO).
+- Used by 200+ countries, covering 98%+ of global merchandise trade.
+- Updated every 5 years (latest: HS 2022).
+
+4.2 STRUCTURE
+------------------------------------------------------------------------
+- 6-digit standardized code (global):
+  * First 2 digits: CHAPTER (e.g., 09 = Coffee, Tea, Spices)
+  * Next 2 digits: HEADING (e.g., 0902 = Tea)
+  * Last 2 digits: SUBHEADING (e.g., 090210 = Green Tea)
+- Countries add additional digits:
+  * India: 8-digit ITC(HS) code
+  * US: 10-digit HTSUS code
+  * EU: 10-digit TARIC code
+
+4.3 MAJOR HS CHAPTERS (EXAMPLES)
+------------------------------------------------------------------------
+- Chapters 01-05: Live Animals and Animal Products
+- Chapters 06-14: Vegetable Products
+- Chapter 15: Animal/Vegetable Fats and Oils
+- Chapters 16-24: Prepared Foodstuffs, Beverages, Tobacco
+- Chapter 25-27: Mineral Products (incl. Petroleum)
+- Chapters 28-38: Chemical Products
+- Chapters 39-40: Plastics and Rubber
+- Chapters 41-43: Leather and Furskins
+- Chapters 44-46: Wood and Wood Articles
+- Chapters 47-49: Pulp, Paper, Printed Materials
+- Chapters 50-63: Textiles and Textile Articles
+- Chapters 64-67: Footwear, Headgear, Umbrellas
+- Chapters 68-70: Stone, Ceramic, Glass
+- Chapter 71: Gems, Precious Metals, Jewelry
+- Chapters 72-83: Base Metals (Iron, Steel, Copper, Aluminum, etc.)
+- Chapters 84-85: Machinery and Electrical Equipment
+- Chapters 86-89: Vehicles, Aircraft, Vessels
+- Chapter 90: Optical, Medical Instruments
+- Chapter 91: Clocks and Watches
+- Chapter 92: Musical Instruments
+- Chapter 93: Arms and Ammunition
+- Chapters 94-96: Furniture, Toys, Miscellaneous
+- Chapter 97: Works of Art, Antiques
+
+4.4 WHY ACCURATE CLASSIFICATION MATTERS
+------------------------------------------------------------------------
+- Determines applicable tariff rates and duties.
+- Identifies regulatory requirements (licenses, safety standards).
+- Affects eligibility for FTA preferential tariffs.
+- Misclassification can lead to: financial penalties, customs delays, shipment seizure.
+- Critical for trade statistics and policy analysis.
+
+================================================================================
+PART 5: FREE TRADE AGREEMENTS (FTAs) — INDIA
+================================================================================
+
+5.1 OVERVIEW
+------------------------------------------------------------------------
+India has signed comprehensive trade agreements with multiple countries/blocs:
+
+A) CEPA (Comprehensive Economic Partnership Agreements):
+   - India-Japan CEPA (in force since Aug 2011)
+   - India-South Korea CEPA (in force since Jan 2010; upgrade ongoing)
+   - India-UAE CEPA (in force since May 2022)
+   - India-Oman CEPA (signed Dec 2025)
+   - India-Australia ECTA (Economic Cooperation and Trade Agreement, in force since Dec 2022)
+
+B) FTAs:
+   - ASEAN-India FTA (AIFTA/AITIGA): Trade in goods effective Jan 2010.
+   - India-Sri Lanka FTA (ISLFTA)
+   - India-Thailand FTA (Early Harvest Scheme)
+   - India-Singapore CECA
+   - India-Malaysia CECA
+   - India-Chile PTA (Preferential Trade Agreement)
+   - India-MERCOSUR PTA
+   - India-Afghanistan PTA
+
+C) Regional Agreements:
+   - SAFTA (South Asian Free Trade Area): Among SAARC nations.
+   - APTA (Asia-Pacific Trade Agreement): India, Bangladesh, China, Laos, South Korea, Sri Lanka.
+
+5.2 BENEFITS OF FTAs
+------------------------------------------------------------------------
+- Lower or zero customs duties on eligible goods.
+- Expanded market access for textiles, pharma, engineering goods, gems & jewelry.
+- Increased services trade (IT, professional services).
+- Investor protection and dispute resolution mechanisms.
+- Technology transfer and supply chain integration.
+
+5.3 RULES OF ORIGIN (RoO)
+------------------------------------------------------------------------
+- Prevent trade deflection (non-originating goods claiming FTA benefits).
+- Key Criteria:
+  * Wholly Obtained: Goods fully produced/harvested in the exporting country.
+  * Substantial Transformation: Non-originating materials undergo significant processing.
+    - Regional Value Content (RVC): Min % of value added in FTA region (e.g., 35% under AIFTA).
+    - Change in Tariff Classification (CTC/CTSH): HS code change during processing.
+- Certificate of Origin (CoO) required to claim preferential tariffs.
+- CAROTAR (2020): Indian regulation ensuring strict RoO compliance for imports.
+
+================================================================================
+PART 6: NOTABLE TRADE DISPUTE CASES
+================================================================================
+
+6.1 WTO DISPUTES INVOLVING INDIA
+------------------------------------------------------------------------
+
+CASE 1: Bangladesh v. India — Lead Acid Batteries (DS306)
+- Issue: India imposed anti-dumping duties on Bangladesh's lead acid battery exports.
+- Significance: One of the first cases where an LDC challenged a major economy at WTO.
+- Outcome: Resolved through negotiation; India terminated anti-dumping duties in 2005.
+- Lesson: WTO mechanism is accessible and effective even for developing nations.
+
+CASE 2: India/Thailand v. US — Shrimp Dispute (DS343)
+- Issue: US imposed anti-dumping duties on shrimp imports using "zeroing" methodology.
+- Outcome: WTO ruled in favor of India/Thailand. US zeroing methodology found inconsistent with WTO Anti-Dumping Agreement.
+- Impact: Significant reduction in anti-dumping duties on Indian shrimp.
+- Lesson: Zeroing is generally prohibited under WTO rules.
+
+CASE 3: EU v. India — Anti-dumping measures (DS304)
+- Issue: EC challenged 27 anti-dumping measures imposed by India on steel and pharmaceutical goods.
+- Allegation: Inconsistent with WTO Anti-Dumping Agreement.
+- Outcome: Resolved through consultations; India reviewed and terminated many measures.
+
+CASE 4: US v. India — Export Promotion Schemes (DS541)
+- Issue: US challenged India's export subsidy programs (MEIS, SEZ benefits, etc.).
+- Allegation: Violated WTO rules on prohibited subsidies (SCM Agreement).
+- Outcome (2019): WTO panel ruled against India. Several export subsidy schemes found inconsistent.
+- Impact: Led to major domestic policy adjustments (replacement of MEIS with RoDTEP).
+
+CASE 5: India-US Mutual Resolution (2023)
+- Issue: Six outstanding disputes terminated by mutual agreement.
+- Scope: Steel countervailing duties, solar cells/modules, renewable energy, export incentives.
+- Both nations removed retaliatory customs duties.
+
+6.2 ANTI-DUMPING CASES — INDIA
+------------------------------------------------------------------------
+
+CASE 6: India's Anti-Dumping Investigation on Chinese Steel
+- Products: Hot-rolled flat products of stainless steel, certain steel products.
+- Outcome: India imposed anti-dumping duties ranging from $35-$558 per tonne.
+- Authority: DGTR (Directorate General of Trade Remedies).
+- Duration: Typically 5 years with sunset review provisions.
+
+CASE 7: India v. China — Solar Cells and Modules
+- Issue: Alleged dumping of solar cells from China at below-market prices.
+- Investigation by DGTR.
+- India imposed safeguard duty on solar cell imports (July 2018 — July 2020).
+- Subsequently replaced with BCD (Basic Customs Duty) of 40% on modules and 25% on cells.
+
+CASE 8: India — Anti-dumping on Caustic Soda from Multiple Countries
+- Countries involved: China, Japan, South Korea, Qatar, Oman, Saudi Arabia, Taiwan, Thailand, USA.
+- Product: Caustic soda (sodium hydroxide).
+- Outcome: Various anti-dumping duties imposed based on individual investigation findings.
+
+6.3 TRADE FRAUD & CUSTOMS ENFORCEMENT CASES — INDIA
+------------------------------------------------------------------------
+
+CASE 9: Customs Duty Fraud — Delhi Industrialist (₹190 Crore Case)
+- Issue: Imported goods undervalued; export documents forged.
+- Method: Duty-free imports diverted into domestic market.
+- Amount: ₹190 crore involved.
+- Agencies: DRI (Directorate of Revenue Intelligence), Customs.
+- Penalties: Confiscation, fines, criminal prosecution.
+
+CASE 10: Chennai Airport Smuggling Crackdown (2023)
+- Seizure: ₹14 crore worth of contraband (gold, iPhones, laptops).
+- Scale: 113 passengers intercepted.
+- Outcome: 20 Customs officials transferred; investigation into negligence/complicity.
+- Methods used by smugglers: Concealment in body cavities, electronic devices, food packaging.
+
+CASE 11: Gold Smuggling Statistics (2023-24)
+- DRI seized 1,319 kg of gold in FY 2023-24.
+- Trend: Smugglers shifted to land borders and coastal routes from airports.
+- Methods: Body concealment, modified vehicles, fishing boats.
+
+CASE 12: Commercial Fraud and FTA Misuse (2023-24)
+- 485 import cases booked for illegal benefits totaling ₹5,900+ crore.
+- Methods: Mis-declaration, undervaluation, misuse of Free Trade Agreements.
+- Focus: Trade-based money laundering and duty evasion.
+
+CASE 13: Narcotics Seizure via Trade Routes (2023-24)
+- DRI seized 107.31 kg of cocaine through air passenger routes.
+- Trend: Increased cocaine smuggling through air cargo and couriers.
+
+6.4 INTERNATIONAL TRADE DISPUTE CASES
+------------------------------------------------------------------------
+
+CASE 14: US-China Trade War (2018-ongoing)
+- US imposed Section 301 tariffs on $370 billion of Chinese goods.
+- China retaliated with tariffs on US agricultural/automotive products.
+- Impact: Global supply chain disruptions, trade diversion to India, Vietnam, others.
+- WTO: Multiple complaints filed by both sides.
+
+CASE 15: Japan-Korea Export Controls Dispute (2019)
+- Japan restricted exports of semiconductor materials to South Korea.
+- Products: Fluorinated polyimide, photoresists, hydrogen fluoride.
+- Issue: Historical/political tensions affecting trade.
+- WTO: South Korea filed complaint; matter still under consultation.
+
+CASE 16: EU Carbon Border Tax Disputes
+- EU CBAM mechanism challenged by developing countries.
+- Concern: Acts as disguised trade barrier, disadvantaging emerging economies.
+- Impact: Affects steel, aluminum, cement exports from India, China, others.
+
+================================================================================
+PART 7: KEY REGULATORY BODIES — QUICK REFERENCE
+================================================================================
+
+INDIA:
+- DGFT (Directorate General of Foreign Trade) — Trade policy, licenses
+- CBIC (Central Board of Indirect Taxes and Customs) — Customs duties
+- RBI (Reserve Bank of India) — Foreign exchange
+- FSSAI — Food safety
+- CDSCO — Drugs and medical devices
+- BIS (Bureau of Indian Standards) — Product standards
+- DGTR (Directorate General of Trade Remedies) — Anti-dumping
+- DRI (Directorate of Revenue Intelligence) — Smuggling enforcement
+- Textile Committee — Textile quality marks
+- GJEPC — Gems & Jewelry exports
+- APEDA — Agricultural/processed food exports
+- MPEDA — Marine products exports
+
+UNITED STATES:
+- CBP (Customs and Border Protection) — Import enforcement
+- BIS (Bureau of Industry and Security) — Export controls (EAR)
+- DDTC — Export controls (ITAR)
+- FDA — Food, drugs, medical devices
+- USDA — Agriculture
+- EPA — Environmental/chemicals
+- FCC — Electronics communications
+- OFAC — Sanctions
+- USITC — Trade investigations, tariff schedule
+
+EUROPEAN UNION:
+- European Commission DG Trade — Trade policy
+- ECHA — Chemical regulation (REACH)
+- EFSA — Food safety
+- EMA — Medicines
+- TAXUD — Customs and taxation
+
+CHINA:
+- GACC (General Administration of Customs) — Customs, food imports
+- NMPA — Drugs, cosmetics, medical devices
+- SAMR — Standards, quality, market regulation
+- MOFCOM — Trade policy
+
+JAPAN:
+- Japan Customs — Import/export procedures
+- MHLW — Food safety, pharmaceuticals
+- METI — Industrial standards, trade
+- PMDA — Drugs and medical devices
+
+UAE:
+- Federal Customs Authority — Customs operations
+- MoIAT — Standards, halal certification
+- DED — Trade licenses
+- EIAC — Accreditation
+
+================================================================================
+PART 8: TRADE DOCUMENTATION CHECKLIST
+================================================================================
+
+8.1 STANDARD EXPORT DOCUMENTS (FROM INDIA)
+------------------------------------------------------------------------
+1. Shipping Bill / Bill of Export
+2. Commercial Invoice
+3. Packing List
+4. Bill of Lading / Airway Bill
+5. Certificate of Origin (preferential or non-preferential)
+6. Insurance Certificate
+7. Letter of Credit (if applicable)
+8. SDF (Softex/Statutory Declaration Form) for FEMA compliance
+9. ARE-1/ARE-3 for excise purposes (if applicable)
+10. Phytosanitary Certificate (for plant products)
+11. Health Certificate (for animal products)
+12. FSSAI Certificate (for food items)
+13. Drug Controller Certificate (for pharmaceuticals)
+14. BIS Certificate (for electronics/standards-regulated items)
+15. GSP Certificate of Origin (Form A) for preferential tariff
+16. RCMC (Registration Cum Membership Certificate) from export promotion council
+
+8.2 STANDARD IMPORT DOCUMENTS (INTO INDIA)
+------------------------------------------------------------------------
+1. Bill of Entry
+2. Commercial Invoice
+3. Packing List
+4. Bill of Lading / Airway Bill
+5. Certificate of Origin
+6. Insurance Certificate
+7. Import License (for restricted goods)
+8. Industrial License (if applicable)
+9. Test/Analysis Certificate
+10. FSSAI Import License (for food products)
+11. Drug Import License (for pharmaceuticals)
+12. BIS Registration (for electronics under CRS)
+13. Phytosanitary Certificate (from exporting country)
+14. Fumigation Certificate
+15. CITES Permit (for wildlife trade items)
+
+================================================================================
+END OF KNOWLEDGE BASE DOCUMENT
+================================================================================
+Disclaimer: This document is for educational and informational purposes only.
+International trade laws, regulations, and policies are subject to frequent
+amendments. Please verify with official government sources (DGFT, CBIC, WTO,
+relevant country's customs authority) or consult qualified trade professionals
+for the most current and legally binding information.
+================================================================================
