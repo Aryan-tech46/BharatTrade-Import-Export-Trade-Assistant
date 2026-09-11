@@ -5,7 +5,6 @@
 [![LangChain](https://img.shields.io/badge/LangChain-v0.3-orange.svg?logo=langchain&logoColor=white)](https://www.langchain.com/)
 [![Pinecone Vector DB](https://img.shields.io/badge/Pinecone-Serverless-green.svg?logo=pinecone&logoColor=white)](https://www.pinecone.io/)
 [![Groq Fast Inference](https://img.shields.io/badge/Groq-Llama%203%20%2F%20GPT--OSS-f55036.svg)](https://groq.com/)
-[![Docker](https://img.shields.io/badge/Docker-Ready-2496ED.svg?logo=docker&logoColor=white)](Dockerfile)
 [![Redis](https://img.shields.io/badge/Redis-Cache-DC382D.svg?logo=redis&logoColor=white)](https://redis.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -23,8 +22,6 @@ The platform combines **Hybrid Search (BM25 + Pinecone)** with a **Resilient Mul
 - [Directory Structure](#-directory-structure)
 - [Environment Variables](#-environment-variables)
 - [Local Setup & Run](#-local-setup--run)
-- [Docker & Docker Compose](#-docker--docker-compose)
-- [Production & Cloud Deployment](#-production--cloud-deployment)
 - [API Endpoints](#-api-endpoints)
 - [Sample Queries](#-sample-queries)
 - [Security & Prompt Injection Defense](#-security--prompt-injection-defense)
@@ -242,47 +239,6 @@ python app.py
 ```
 
 Open your browser at **`http://localhost:8080`**.
-
----
-
-## 🐳 Docker & Docker Compose
-
-Run the complete stack (Flask application + Redis container) with a single command:
-
-```bash
-# Build and start containers in the background
-docker compose up --build -d
-
-# Check service logs
-docker compose logs -f
-
-# Stop containers
-docker compose down
-```
-
-### Running Standalone Docker
-```bash
-# Build the Docker image
-docker build -t importexport-chatbot .
-
-# Run container passing your .env file
-docker run -p 8080:8080 --env-file .env importexport-chatbot
-```
-
----
-
-## ☁️ Production & Cloud Deployment
-
-### Deploying to Render
-This repository includes a [`render.yaml`](render.yaml) blueprint for one-click deployment:
-
-1. Connect your GitHub repository to [Render](https://render.com/).
-2. Create a new **Blueprint** and point to `render.yaml`.
-3. Set your environment variables (`PINECONE_API_KEY`, `GROQ_API_KEY`, etc.) in the Render dashboard.
-4. Render will automatically build using CPU-only PyTorch and serve traffic with Gunicorn multi-worker multi-threaded WSGI:
-   ```bash
-   gunicorn --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 120 app:app
-   ```
 
 ---
 
