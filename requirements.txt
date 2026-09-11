@@ -1,5 +1,6 @@
 langchain
-langchain-pinecone
+langchain-pinecone>=0.2.0
+pinecone>=5.0.0
 langchain-huggingface
 langchain-community
 flask
