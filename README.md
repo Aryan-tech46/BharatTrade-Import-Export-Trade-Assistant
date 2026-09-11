@@ -79,25 +79,25 @@ flowchart TD
     end
 
     subgraph Backend ["Flask WSGI Application"]
-        Router["/get & /upload Endpoints"]
-        Mem["Session Store (Redis / In-Memory TTL)"]
-        Prof["Statistical Profiler & Ephemeral BM25"]
+        Router["Get and Upload Endpoints"]
+        Mem["Session Store (Redis / TTL)"]
+        Prof["Statistical Profiler and Ephemeral BM25"]
     end
 
     subgraph Retrieval ["Hybrid Search Engine"]
-        Pinecone[("Pinecone Serverless Index<br/>(MiniLM-L6-v2 Embeddings)")]
-        BM25[("BM25 Local Inverted Index<br/>(HS Codes & Laws)")]
-        Ensemble["Ensemble Retriever<br/>(Weighted Reciprocal Rank)"]
+        Pinecone[Pinecone Serverless Index - MiniLM Embeddings]
+        BM25[BM25 Local Inverted Index - HS Codes and Laws]
+        Ensemble[Ensemble Retriever - Weighted Reciprocal Rank]
     end
 
     subgraph LLM_Chain ["Multi-Provider LLM Engine"]
-        Factory["Model Factory (Fallback Chain)"]
-        Groq["Groq API (Primary: 120b/70b)"]
-        Gemini["Google Gemini (Fallback 1)"]
-        HF["HuggingFace (Fallback 2)"]
+        Factory[Model Factory - Fallback Chain]
+        Groq[Groq API - Primary 120b or 70b]
+        Gemini[Google Gemini - Fallback 1]
+        HF[HuggingFace - Fallback 2]
     end
 
-    UI -->|1. User Query & Files| Router
+    UI -->|1. User Query and Files| Router
     Router -->|2. Get Session State| Mem
     Router -->|3. Ephemeral Profiling| Prof
     Router -->|4. Search Query| Ensemble
@@ -108,7 +108,7 @@ flowchart TD
     Factory --> Groq
     Groq -.->|On Failure| Gemini
     Gemini -.->|On Failure| HF
-    Factory -->|6. Token Stream (SSE)| SSE
+    Factory -->|6. Token Stream SSE| SSE
     SSE --> MD
     MD --> UI
 ```
