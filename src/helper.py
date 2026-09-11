@@ -1,8 +1,16 @@
 from langchain_community.document_loaders import PyPDFLoader, DirectoryLoader, TextLoader
 from langchain_community.retrievers import BM25Retriever
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+try:
+    from langchain_text_splitters import RecursiveCharacterTextSplitter
+except ImportError:
+    from langchain.text_splitter import RecursiveCharacterTextSplitter
+
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain.schema import Document
+
+try:
+    from langchain_core.documents import Document
+except ImportError:
+    from langchain.schema import Document
 from typing import List
 import pandas as pd
 import os
