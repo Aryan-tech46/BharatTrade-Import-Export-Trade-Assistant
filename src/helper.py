@@ -317,11 +317,24 @@ def download_hugging_face_embeddings():
     """
     Download and return HuggingFace sentence-transformer embeddings.
     Model: all-MiniLM-L6-v2 (384 dimensions).
+    On memory-constrained servers (like Render's 512MB free tier), uses the
+    cloud-hosted Inference API to save ~200MB of RAM.
     """
-    embeddings = HuggingFaceEmbeddings(
+    hf_token = os.environ.get("HUGGINGFACEHUB_ACCESS_TOKEN") or os.environ.get("HF_TOKEN")
+    if (os.environ.get("RENDER") or os.environ.get("USE_HF_API", "").lower() == "true") and hf_token:
+        try:
+            from langchain_huggingface.embeddings import HuggingFaceEndpointEmbeddings
+            print("🌐 Connecting to HuggingFace Serverless Inference API for embeddings (saving ~200MB RAM)...")
+            return HuggingFaceEndpointEmbeddings(
+                model="sentence-transformers/all-MiniLM-L6-v2",
+                huggingfacehub_api_token=hf_token,
+            )
+        except Exception as e:
+            print(f"⚠️ Remote embeddings unavailable ({e}), falling back to local model...")
+
+    return HuggingFaceEmbeddings(
         model_name="sentence-transformers/all-MiniLM-L6-v2"
     )
-    return embeddings
 
 
 # ---------- BM25 Sparse Keyword Retriever ----------
@@ -338,10 +351,10 @@ def build_or_load_bm25_retriever(k: int = 5) -> BM25Retriever:
             with open(BM25_CACHE_PATH, "rb") as f:
                 retriever = pickle.load(f)
                 retriever.k = k
-                print(f"📦 Loaded BM25 sparse retriever from cache ({BM25_CACHE_PATH})")
+                print(f"Loaded BM25 sparse retriever from cache ({BM25_CACHE_PATH})")
                 return retriever
         except Exception as e:
-            print(f"⚠️ Failed to load BM25 cache: {e}. Rebuilding...")
+            print(f"Warning: Failed to load BM25 cache: {e}. Rebuilding...")
 
     print("🔨 Building BM25 sparse index from corpus documents...")
     book_docs = load_pdf_file(data_dir="data/book/") if os.path.exists("data/book/") else []
