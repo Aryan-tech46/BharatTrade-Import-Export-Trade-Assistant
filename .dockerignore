@@ -1,0 +1,17 @@
+# Docker ignore
+.git
+.gitignore
+.env
+.venv
+venv/
+env/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+scratch/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

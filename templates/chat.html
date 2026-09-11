@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BharatTrade - Import Export Trade Assistant</title>
+  <meta name="description"
+    content="AI-powered Import/Export Business Assistant — Indian Dept. of Commerce trade data + Weiss playbook. HS codes, duties, docs, markets." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=3.0">
+  <script src="{{ url_for('static', filename='marked.min.js') }}?v=1.1"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+
+<body id="top">
+
+  <!-- ══ TOP RACING STRIPE (Deepgram ref) ══ -->
+  <div class="stripe" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track" id="tickerTrack">
+      <span>⚓ NHAVA SHEVA 12,400 TEU →</span><span>✦ SHANGHAI → ROTTERDAM $1,850 / 40FT</span>
+      <span>✈ DEL → DXB $3.2/KG →</span><span>◍ HS 0901 COFFEE · BCD 30%</span>
+      <span>⚓ MUNDRA → JEBEL ALI · 4 DAYS →</span><span>✦ INCOTERMS 2020 · FOB vs CIF</span>
+      <span>◍ COCONUT FIBRE EXPORT +22%</span><span>✦ INDIA → USA · ENGG + PHARMA LEADS</span>
+    </div>
+  </div>
+
+  <!-- ══ NAV (Deepgram ref: Products/Solutions/Resources + Contact/LogIn/SignUp) ══ -->
+  <nav class="nav" id="topnav">
+    <a class="brand" href="#top" aria-label="BharatTrade home">
+      <span class="brand-mark">🌐</span>
+      <span class="brand-name">BHARAT<i>TRADE</i></span>
+    </a>
+    <div class="nav-pill" role="navigation">
+      <a href="#playground">HS Finder ▾</a>
+      <a href="#playground" data-goto-tab="duty">Duty Calc ▾</a>
+      <a href="#playground" data-goto-tab="docs">Docs ▾</a>
+      <a href="#assistant">Playground</a>
+      <a href="#sources">Data</a>
+    </div>
+    <div class="nav-cta">
+      <span class="live" id="liveClock" title="Indian Standard Time">● LIVE</span>
+      <a class="btn btn-dark github-btn" href="https://github.com/Aryan-tech46/Import-Export-Trade-Assistent.git"
+        target="_blank" rel="noopener" title="View source on GitHub" aria-label="GitHub repository">
+        <svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" aria-hidden="true">
+          <path
+            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+        </svg>
+        <span class="nav-hide-sm">GitHub</span>
+      </a>
+      <button class="btn btn-red" onclick="document.getElementById('assistant').scrollIntoView({behavior:'smooth'})">Try
+        it now →</button>
+      <button class="hamb" id="hamb" aria-label="menu">☰</button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#playground">HS Finder</a><a href="#playground" data-goto-tab="duty">Duty Calculator</a>
+    <a href="#assistant">AI Assistant</a><a href="#sources">Data</a>
+  </div>
+
+  <!-- ══ HERO (Deepgram homage: big serif headline + mic-moment illustration) ══ -->
+  <header class="hero">
+    <div class="hero-left">
+      <div class="badge-row">
+        <span class="badge-red">✦ NEW · GROUNDED RAG LIVE</span>
+        <span class="badge-white">🌍 Dept. of Commerce data · Weiss playbook</span>
+      </div>
+      <h1 class="mega">
+        <span class="l1">The <em class="red">Global Trade</em></span>
+        <span class="l2">Economy is <em class="stroke">Powered</em></span>
+        <span class="l3">by BharatTrade</span>
+      </h1>
+      <p class="hero-sub">Ask in plain English / Hindi / Hinglish — get <b>HS codes, duties, docs &amp; market intel</b>
+        with cited sources. Grounded in two pillars below:</p>
+      <div class="hero-sources">
+        <a class="hero-src" href="https://tradestat.commerce.gov.in/eidb/commodity_wise_export" target="_blank"
+          rel="noopener">
+          <b>🏛️ Government of India TradeStat</b>
+          <span>Commodity-wise export data ↗</span>
+        </a>
+        <button class="hero-src" data-ask="What are the key Indian trade laws and how are export disputes resolved?">
+          <b>⚖️ Laws and Trade Disputes</b>
+          <span>FTDR, arbitration &amp; compliance →</span>
+        </button>
+      </div>
+      <div class="hero-btns">
+        <button class="btn btn-red big"
+          onclick="document.getElementById('assistant').scrollIntoView({behavior:'smooth'})">Sign Up Free</button>
+        <button class="btn btn-blue big"
+          onclick="document.getElementById('playground').scrollIntoView({behavior:'smooth'})">Playground</button>
+      </div>
+      <div class="hero-meta">
+        <span>◉ ITC-HS 2024 grounded</span><span>◉ Incoterms® 2020</span><span>◉ IEC / DGFT aware</span><span>◉ CSV ·
+          Excel · PDF upload</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="art-card">
+        <svg class="ship-art" viewBox="0 0 360 330" fill="none" aria-hidden="true">
+          <circle cx="296" cy="54" r="26" fill="#FFC82E" stroke="#141414" stroke-width="6" />
+          <path d="M40 66 q-16 -6 -9 -24 M44 96 q-13 5 -20 -9" stroke="#141414" stroke-width="5"
+            stroke-linecap="round" />
+          <path d="M104 56 Q196 18 268 44" stroke="#141414" stroke-width="4" stroke-linecap="round"
+            stroke-dasharray="2 9" opacity=".55" />
+          <text x="272" y="40" font-size="18">✈</text>
+          <g>
+            <circle cx="66" cy="132" r="27" fill="#BCD6BE" stroke="#141414" stroke-width="6" />
+            <ellipse cx="66" cy="132" rx="12" ry="27" stroke="#141414" stroke-width="3" />
+            <path d="M41 126 h50 M41 140 h50" stroke="#141414" stroke-width="3" />
+          </g>
+          <g stroke="#141414" stroke-width="5">
+            <rect x="58" y="156" width="58" height="34" fill="#FF2E1F" />
+            <rect x="120" y="156" width="58" height="34" fill="#2B5CFF" />
+            <rect x="182" y="156" width="58" height="34" fill="#FFC82E" />
+            <rect x="89" y="120" width="58" height="34" fill="#FFFDF0" />
+            <rect x="151" y="120" width="58" height="34" fill="#FF2E1F" />
+          </g>
+          <g stroke="#141414" stroke-width="3" opacity=".45">
+            <path d="M70 156 v34 M82 156 v34 M94 156 v34 M132 156 v34 M144 156 v34 M156 156 v34" />
+            <path d="M194 156 v34 M206 156 v34 M218 156 v34 M101 120 v34 M113 120 v34 M163 120 v34 M175 120 v34" />
+          </g>
+          <text x="149" y="143" text-anchor="middle" font-family="Anton, sans-serif" font-size="20"
+            fill="#141414">BT</text>
+          <g stroke="#141414" stroke-width="6">
+            <rect x="246" y="96" width="56" height="94" fill="#FFFDF0" />
+            <rect x="246" y="78" width="56" height="18" fill="#FF2E1F" />
+            <path d="M274 78 V54" stroke-width="5" />
+            <circle cx="274" cy="48" r="5" fill="#FF2E1F" />
+          </g>
+          <rect x="254" y="108" width="40" height="14" fill="#2B5CFF" stroke="#141414" stroke-width="4" />
+          <rect x="254" y="130" width="40" height="14" fill="#BCD6BE" stroke="#141414" stroke-width="4" />
+          <path d="M40 192 h280 l-28 60 h-224 z" fill="#141414" stroke="#141414" stroke-width="6"
+            stroke-linejoin="round" />
+          <path d="M52 212 h256" stroke="#FF2E1F" stroke-width="10" />
+          <g fill="#FFF6D3">
+            <circle cx="96" cy="234" r="7" />
+            <circle cx="132" cy="234" r="7" />
+            <circle cx="168" cy="234" r="7" />
+            <circle cx="204" cy="234" r="7" />
+            <circle cx="240" cy="234" r="7" />
+          </g>
+          <path d="M36 280 q20 -14 40 0 t40 0 t40 0 t40 0 t40 0 t40 0" stroke="#141414" stroke-width="5"
+            stroke-linecap="round" />
+          <path d="M56 300 q20 -14 40 0 t40 0 t40 0 t40 0 t40 0" stroke="#141414" stroke-width="4"
+            stroke-linecap="round" opacity=".5" />
+        </svg>
+        <div class="chip-float f1">🛳️ BOM → JEA <b>4 days · $650</b></div>
+        <div class="chip-float f2">📦 HS 0901 11 <b>Coffee · 30%</b></div>
+        <div class="chip-float f3">✅ COO + BL verified</div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ══ PLAYGROUND TABS (Deepgram tab-bar homage) ══ -->
+  <section class="play reveal" id="playground">
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="hs">◉ HS Finder</button>
+      <button class="tab" data-tab="duty">◉ Duty Estimator</button>
+      <button class="tab" data-tab="docs">◉ Docs Checklist</button>
+      <button class="tab" data-tab="assistant-tab">◉ AI Assistant</button>
+    </div>
+    <div class="panels">
+      <div class="panel active" id="panel-hs">
+        <div class="panel-cols">
+          <div>
+            <h3>Find your ITC-HS in seconds</h3>
+            <p>Type a product — coffee, saree, brass valve, turmeric — and match the 8-digit code + duty hint. Then push
+              it to the AI for the full tariff note with sources.</p>
+            <div class="hs-search">
+              <input id="hsInput" type="text" placeholder='Try: "coffee", "sneakers", "tiles"…' autocomplete="off" />
+              <button class="btn btn-red" id="hsBtn">Search</button>
+            </div>
+            <p class="tiny">Grounded in ITC-HS logic · AI cites Commerce DB + Weiss book.</p>
+          </div>
+          <div class="hs-out" id="hsOut"></div>
+        </div>
+      </div>
+      <div class="panel" id="panel-duty">
+        <div class="panel-cols">
+          <div class="controls">
+            <label>CIF value ($) <b id="cifVal">$10,000</b></label>
+            <input type="range" id="cifRange" min="1000" max="100000" step="500" value="10000" aria-label="CIF value">
+            <label>Product category</label>
+            <div class="chip-row" id="catRow">
+              <button class="pchip on" data-bcd="20" data-gst="18">Sneakers 20%+18%</button>
+              <button class="pchip" data-bcd="30" data-gst="5">Coffee 30%+5%</button>
+              <button class="pchip" data-bcd="10" data-gst="12">Textiles 10%+12%</button>
+              <button class="pchip" data-bcd="60" data-gst="28">Cosmetics 60%+28%</button>
+            </div>
+            <label>Trade lane</label>
+            <select id="laneSel">
+              <option value="0">UAE · zero pref (MFN)</option>
+              <option value="-5">UK · FTA −5% BCD</option>
+              <option value="-3">EU · GSP −3% BCD</option>
+              <option value="0">USA · MFN</option>
+            </select>
+          </div>
+          <div class="result-card">
+            <h4>LANDED COST · MUMBAI 🇮🇳</h4>
+            <div class="big-num" id="landedNum">$13,468</div>
+            <div class="break" id="dutyBreak"></div>
+            <button class="btn btn-dark" data-ask="Explain India import duty for sneakers CIF $10000 from UAE">Ask AI to
+              explain →</button>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="panel-docs">
+        <div class="panel-cols">
+          <div class="controls">
+            <label>What are you shipping?</label>
+            <select id="docProduct">
+              <option value="food">Spices / Food → UAE (sea)</option>
+              <option value="textile">Textiles → EU (sea)</option>
+              <option value="ceramic">Ceramic Tiles → USA (sea)</option>
+              <option value="electronics">Electronics → Singapore (air)</option>
+            </select>
+            <label>Mode</label>
+            <div class="chip-row" id="modeRow">
+              <button class="pchip on">Sea FCL</button><button class="pchip">Air</button><button
+                class="pchip">Courier</button>
+            </div>
+            <button class="btn btn-red" id="docBtn" style="margin-top:14px">✦ Generate checklist</button>
+          </div>
+          <div class="result-card checklist" id="docOut">
+            <p class="muted">Pick a lane and hit generate — IEC, invoice, packing list, BL/AWB, COO, insurance + product
+              NOCs.</p>
+          </div>
+        </div>
+      </div>
+      <div class="panel" id="panel-assistant-tab">
+        <div class="panel-cols">
+          <div>
+            <h3>Talk to the grounded assistant ↓</h3>
+            <p>Every answer cites <b>Dept. of Commerce data</b>, the <b>Weiss playbook</b>, or <b>your uploaded
+                file</b>. Scroll down — the live chat streams from your Flask <code>/get</code> SSE endpoint.</p>
+            <button class="btn btn-blue"
+              onclick="document.getElementById('assistant').scrollIntoView({behavior:'smooth'})">Open live chat
+              ↓</button>
+          </div>
+          <div class="mini-demo">
+            <div class="bubble bot">Which HS code for <b>dried mango</b> to Germany?</div>
+            <div class="bubble me">→ <b>0804 50 20</b> · BCD 30% · APEDA + phyto needed. <span class="tag">Commerce
+                DB</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ JOURNEY (Deepgram "Choose your Voice AI journey" homage) ══ -->
+  <section class="journey reveal">
+    <h2 class="sec-title center">Choose your Trade AI journey</h2>
+    <p class="sec-sub center">Choose the path that best fits your business needs and technical requirements.</p>
+    <div class="journey-grid">
+      <div class="j-card">
+        <div class="j-art">🚜 + 📦</div>
+        <h3>Start exporting in 30 days</h3>
+        <p>New exporters &amp; D2C founders. IEC via DGFT, product-market fit from Commerce data, first buyer, first
+          shipment — the Weiss way, step by step.</p>
+        <button class="btn btn-ghost" data-ask="How do I start an export business from India?">Become a Partner</button>
+      </div>
+      <div class="j-card">
+        <div class="j-art">🏭 ⇢ 🌍</div>
+        <h3>Scale to 10+ countries</h3>
+        <p>Upload your sales CSV/Excel. Get new-market targeting, duty drawback hints, compliance radar &amp; route
+          savings — personalised on your data.</p>
+        <button class="btn btn-ghost" data-ask="Which new markets should I target for growth?">Talk to Sales</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ API BANNER (Deepgram "Unlock voice AI" homage) ══ -->
+  <section class="api-banner reveal">
+    <h2>Unlock trade intelligence at scale with an API call</h2>
+    <p>Build with real-time HS lookup, duty math, docs &amp; route agents on the world's best trade stack.</p>
+    <div class="api-btns"><button class="btn btn-blue" data-ask="What are the top commodities India exports?">Try it
+        Now</button>
+      <button class="btn btn-red" onclick="document.getElementById('assistant').scrollIntoView({behavior:'smooth'})">Get
+        a Demo</button>
+    </div>
+  </section>
+
+  <!-- ══ MAIN ASSISTANT — BACKEND IDs PRESERVED (chat-box, user-input, send-btn, file-input…) ══ -->
+  <section class="assistant" id="assistant">
+    <div class="assist-head reveal">
+      <div class="kicker">● LIVE ASSISTANT — GROUNDED RAG</div>
+      <h2 class="sec-title">Ask anything. <span class="hl">Get cited answers.</span></h2>
+      <p class="sec-sub">Powered by Indian trade data &amp; expert knowledge · sources under every answer · upload
+        CSV/Excel/PDF for personalised strategy.</p>
+    </div>
+
+    <div class="app-container">
+      <header class="chat-header" id="chat-header">
+        <div class="header-icon">🌐</div>
+        <div class="header-text">
+          <h1>BharatTrade Assistant</h1>
+          <p>Dept. of Commerce data · Weiss playbook · Your uploads</p>
+        </div>
+        <div class="header-actions">
+          <button id="clear-chat-btn" class="header-action-btn" title="Start a fresh conversation"><span>✨</span> New
+            Chat</button>
+          <div class="header-status"><span class="status-dot"></span> Online</div>
+        </div>
+      </header>
+
+      <div class="chat-box" id="chat-box">
+        <div class="welcome-message" id="welcome-message">
+          <div class="welcome-icon">🚢</div>
+          <h2>LEARN BETTER<br><span>TRADE</span> THINGS</h2>
+          <p>Ask about import/export business, Indian trade data, HS codes, duties, documents, or how to start your
+            company. Upload business data for <strong>personalised suggestions</strong>.</p>
+          <div class="suggestion-chips" id="suggestion-chips">
+            <button class="chip" data-query="How do I start an export business from India?">🚀 Start an export
+              business</button>
+            <button class="chip" data-query="What does India export to the USA?">🌎 India exports to USA</button>
+            <button class="chip" data-query="What are the top commodities India exports?">📦 Top export
+              commodities</button>
+            <button class="chip" data-query="Explain HS codes and their importance in trade">🏷️ What are HS
+              codes?</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="typing-indicator" id="typing-indicator">
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+        <div class="typing-dot"></div>
+      </div>
+
+      <div class="upload-badge" id="upload-badge" style="display:none">
+        <div class="upload-badge-content">
+          <span>📊</span><span class="upload-badge-filename" id="upload-badge-filename"></span>
+          <span class="upload-badge-status">✓ Loaded</span>
+          <button class="upload-badge-remove" id="upload-badge-remove" title="Remove file">✕</button>
+        </div>
+        <div class="upload-badge-hint">Personalised answers ON — based on your file</div>
+      </div>
+
+      <div class="upload-progress" id="upload-progress" style="display:none">
+        <div class="upload-progress-bar">
+          <div class="upload-progress-fill" id="upload-progress-fill"></div>
+        </div>
+        <span class="upload-progress-text">Processing file…</span>
+      </div>
+
+      <button id="scroll-bottom-btn" class="scroll-bottom-btn" style="display:none" title="Scroll to bottom">↓</button>
+
+      <div class="input-area">
+        <div class="input-wrapper">
+          <button class="upload-btn" id="upload-btn" title="Upload CSV, Excel, PDF">📎</button>
+          <input type="file" id="file-input" accept=".csv,.xlsx,.xls,.pdf,.txt" style="display:none">
+          <input type="text" id="user-input" placeholder="Ask about import/export, trade data, HS codes…"
+            autocomplete="off" />
+          <button class="send-btn" id="send-btn" title="Send">➤</button>
+        </div>
+        <div class="input-footer"><span>Supports: CSV · Excel · PDF · TXT</span><span>🔒 Files processed for this
+            session, not stored</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SOURCES + FOOTER (Deepgram footer homage) ══ -->
+  <section class="sources reveal" id="sources">
+    <h2 class="sec-title">Grounded in official sources</h2>
+    <div class="src-grid">
+      <a class="src-card" href="https://tradestat.commerce.gov.in/eidb/commodity_wise_export" target="_blank"
+        rel="noopener"><b>🏛 Dept. of Commerce ↗</b>
+        <p>Govt. of India · Ministry of Commerce &amp; Industry · commodity &amp; country-wise export/import data</p>
+      </a>
+      <a class="src-card" href="https://www.dgft.gov.in/CP/?opt=itchs-import-export" target="_blank"
+        rel="noopener"><b>📜 Directorate General of Foreign Trade ↗</b>
+        <p>ITC-HS import-export schedule · policy, licensing &amp; procedures</p>
+      </a>
+      <div><b>📕 Weiss, 4th Ed.</b>
+        <p><i>Building an Import/Export Business</i> — operations, costing, compliance playbook</p>
+      </div>
+      <div><b>📊 Your uploads</b>
+        <p>CSV / Excel / PDF analysed in-session for targeting &amp; growth strategy</p>
+      </div>
+    </div>
+    <div class="newsletter"><span>Get news and product updates:</span><input id="nlInput" placeholder="you@company.com"
+        aria-label="email" /><button class="btn btn-blue" id="nlBtn">Sign Up Free</button></div>
+    <footer>
+      <div class="credit">
+        <div class="credit-id"><span class="credit-ava">AK</span><span><b>Designed &amp; Developed by Aryan
+              Kumar</b><i>B.Tech · IIIT Surat</i></span></div>
+        <div class="credit-links">
+          <a href="https://www.linkedin.com/in/aryan-kumar648/" target="_blank" rel="noopener" title="LinkedIn">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z" />
+            </svg>
+            LinkedIn</a>
+          <a href="https://github.com/Aryan-tech46/" target="_blank" rel="noopener" title="GitHub">
+            <svg viewBox="0 0 16 16" width="16" height="16" fill="currentColor" aria-hidden="true">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+            </svg>
+            GitHub</a>
+        </div>
+      </div>
+      <div class="f-cols">
+        <div><b>Assistant</b><a href="#assistant">Live chat</a><a href="#playground">HS Finder</a><a href="#playground"
+            data-goto-tab="duty">Duty Calc</a></div>
+        <div><b>Company</b><a href="#assistant">Assistant</a><a href="#playground">Playground</a><a
+            href="#sources">Sources</a></div>
+        <div><b>Compare</b><a href="#playground">FOB vs CIF</a><a href="#assistant">Routes</a><a
+            href="#assistant">Compliance</a></div>
+        <div><b>Resources</b><a href="#assistant">IEC Guide</a><a href="#assistant">Incoterms 2020</a><a
+            href="#assistant">API Demo</a></div>
+      </div>
+      <p class="copy">◈ BHARATTRADE · Made in India for the world · ITC-HS 2024 · Incoterms® 2020 · <a href="#top">Back
+          to top ↑</a></p>
+    </footer>
+  </section>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="{{ url_for('static', filename='app.js') }}?v=3.0"></script>
+</body>
+
+</html>

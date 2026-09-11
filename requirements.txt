@@ -1,0 +1,17 @@
+langchain
+langchain-pinecone
+langchain-huggingface
+langchain-community
+flask
+sentence-transformers
+pypdf
+python-dotenv
+pandas
+openpyxl
+gunicorn
+rank-bm25
+langchain-core
+langchain-groq
+langchain-google-genai
+redis>=5.0.0
+waitress>=3.0.0
