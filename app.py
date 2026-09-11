@@ -41,6 +41,11 @@ import sys
 import uuid
 import tempfile
 import json
+import gc
+
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["MALLOC_ARENA_MAX"] = "2"
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8")
@@ -136,6 +141,9 @@ prompt = ChatPromptTemplate.from_messages([
 
 question_answer_chain = create_stuff_documents_chain(model, prompt)
 rag_chain = create_retrieval_chain(history_aware_retriever, question_answer_chain)
+
+# Reclaim initialization memory
+gc.collect()
 
 
 # ── Helper: get or create session ID ───────────────────────────────
