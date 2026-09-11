@@ -1,4 +1,5 @@
 langchain
+langchain-classic
 langchain-pinecone>=0.2.0
 pinecone>=5.0.0
 langchain-huggingface

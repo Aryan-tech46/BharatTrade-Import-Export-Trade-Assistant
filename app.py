@@ -28,9 +28,14 @@ from src.session_store import (
     save_uploaded_data,
     clear_uploaded_data,
 )
-from langchain.chains import create_retrieval_chain, create_history_aware_retriever
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain.retrievers import EnsembleRetriever
+try:
+    from langchain.chains import create_retrieval_chain, create_history_aware_retriever
+    from langchain.chains.combine_documents import create_stuff_documents_chain
+    from langchain.retrievers import EnsembleRetriever
+except (ImportError, ModuleNotFoundError):
+    from langchain_classic.chains import create_retrieval_chain, create_history_aware_retriever
+    from langchain_classic.chains.combine_documents import create_stuff_documents_chain
+    from langchain_classic.retrievers import EnsembleRetriever
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
 from langchain_core.messages import HumanMessage, AIMessage
 from dotenv import load_dotenv
